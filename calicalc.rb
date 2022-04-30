@@ -1,4 +1,6 @@
+#needed for code
 require_relative "calcmethods.rb"
+require_relative "ifelsedet.rb"
 
 #Main below.
 
@@ -12,35 +14,25 @@ decision = gets.chomp.to_s #gets math operator from user
 #math operator calculations below
 #beansprouts
 if decision == '+'
-  puts "Enter the second number: "
-  secondNum = gets.chomp.to_f
-  ans = adder(firstNum,secondNum)
+  ans = decisionAdd(firstNum)
   puts ans
 elsif decision == '/'
-  puts "Enter the second number: "
-  secondNum = gets.chomp.to_f
-  ans = divider(firstNum,secondNum)
+  ans = decisionDiv(firstNum)
   puts ans
 elsif decision == '*'
-  puts "Enter the second number: "
-  secondNum = gets.chomp.to_f
-  ans = multiply(firstNum,secondNum)
+  ans = decisionMult(firstNum)
   puts ans
 elsif decision == '-'
-  puts "Enter the second number: "
-  secondNum = gets.chomp.to_f
-  ans = subtracter(firstNum,secondNum)
+  ans = decisionSub(firstNum)
   puts ans
 elsif decision == '^'
-  puts "Enter the second number: "
-  secondNum = gets.chomp.to_f
-  ans = exponent(firstNum,secondNum)
+  ans = decisionEx(firstNum)
   puts ans
 elsif decision == '2/'
-  ans = sqrt(firstNum)
+  ans = decisionsqrt(firstNum)
   puts ans
 elsif decision == '2'
-  ans = sqr(firstNum)
+  ans = decisionsqr(firstNum)
   puts ans
 else
   puts "Invalid operation please try again"
