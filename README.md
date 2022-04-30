@@ -1,6 +1,6 @@
 # Calicalc
 
-Calculator made in Ruby.
+Terminal based calculator made with Ruby.
 
 Side Project used to become familiar with the Ruby Programming Language.
 
