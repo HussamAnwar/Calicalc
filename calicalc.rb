@@ -23,33 +23,28 @@ decision = gets.chomp.to_s #gets math operator from user
 #beansprouts
 if decision == '+'
   ans = decisionAdd(firstNum)
-  puts ans
 elsif decision == '/'
   ans = decisionDiv(firstNum)
-  puts ans
 elsif decision == '*'
   ans = decisionMult(firstNum)
-  puts ans
 elsif decision == '-'
   ans = decisionSub(firstNum)
-  puts ans
 elsif decision == '^'
   ans = decisionEx(firstNum)
-  puts ans
 elsif decision == '2/'
   ans = decisionsqrt(firstNum)
-  puts ans
 elsif decision == '2'
   ans = decisionsqr(firstNum)
-  puts ans
 else
   puts "Invalid operation please try again"
 end
 
+puts "\nAnswer = #{ans}\n\n"
+
 #stores answer in memory
 memory = memory(ans, m)
 
-puts "#{memory}"
+puts "#{memory} is in memory\n\n"
 #Asks for the yes or no decision from user (0 is no, 1 is yes)
 print "Enter 0 to exit or 1 to continue: "
 yOrN = gets.to_i
