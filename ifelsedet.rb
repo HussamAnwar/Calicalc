@@ -1,44 +1,39 @@
+# frozen_string_literal: true
+
 def decisionAdd(firstNum)
-    puts "Enter the second number: "
-    secondNum = gets.chomp.to_f
-    ans = adder(firstNum,secondNum)
-    return ans
+  puts 'Enter the second number: '
+  secondNum = gets.chomp.to_f
+  adder(firstNum, secondNum)
 end
 
 def decisionDiv(firstNum)
-  puts "Enter the second number: "
+  puts 'Enter the second number: '
   secondNum = gets.chomp.to_f
-  ans = divider(firstNum,secondNum)
-  return ans
+  divider(firstNum, secondNum)
 end
 
 def decisionMult(firstNum)
-  puts "Enter the second number: "
+  puts 'Enter the second number: '
   secondNum = gets.chomp.to_f
-  ans = multiply(firstNum,secondNum)
-  return ans
+  multiply(firstNum, secondNum)
 end
 
 def decisionSub(firstNum)
-  puts "Enter the second number: "
+  puts 'Enter the second number: '
   secondNum = gets.chomp.to_f
-  ans = subtracter(firstNum,secondNum)
-  return ans
+  subtracter(firstNum, secondNum)
 end
 
 def decisionEx(firstNum)
-  puts "Enter the second number: "
+  puts 'Enter the second number: '
   secondNum = gets.chomp.to_f
-  ans = exponent(firstNum,secondNum)
-  return ans
+  exponent(firstNum, secondNum)
 end
 
 def decisionsqrt(firstNum)
-  ans = sqrt(firstNum)
-  return ans
+  sqrt(firstNum)
 end
 
 def decisionsqr(firstNum)
-  ans = sqr(firstNum)
-  return ans
+  sqr(firstNum)
 end
