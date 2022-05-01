@@ -48,7 +48,7 @@ def intro()
   puts "Welcome to CaliCalc!"
   puts "CaliCalc is a terminal based calculator."
   puts "You will be prompted to input a number then an operator."
-  puts "Any value in [] is stored in memory. memory access will be added soon."
+  puts "Any value in [] is stored in memory. Type in the memory value to use it"
   puts "To start please hit the return key."
 end
 #methods end

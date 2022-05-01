@@ -1,4 +1,4 @@
 def memory(ans, m)
-  mems = m.append(ans)
+  mems = m.push(ans)
   return mems
 end
