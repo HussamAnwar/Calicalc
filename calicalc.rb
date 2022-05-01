@@ -1,3 +1,5 @@
+#! /usr/bin/ruby
+
 #needed for code
 require_relative "calcmethods.rb"
 require_relative "ifelsedet.rb"
