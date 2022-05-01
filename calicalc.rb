@@ -16,7 +16,7 @@ loop do # do while loop beginning
   m = mem
 
   puts 'Enter the first number: '
-  firstNum = gets.chomp.to_f # gets first number from user
+  first_num = gets.chomp.to_f # gets first number from user
 
   operations
   decision = gets.chomp.to_s # gets math operator from user
@@ -25,19 +25,19 @@ loop do # do while loop beginning
   # beansprouts
   case decision
   when '+'
-    ans = decisionAdd(firstNum)
+    ans = decisionAdd(first_num)
   when '/'
-    ans = decisionDiv(firstNum)
+    ans = decisionDiv(first_num)
   when '*'
-    ans = decisionMult(firstNum)
+    ans = decisionMult(first_num)
   when '-'
-    ans = decisionSub(firstNum)
+    ans = decisionSub(first_num)
   when '^'
-    ans = decisionEx(firstNum)
+    ans = decisionEx(first_num)
   when '2/'
-    ans = decisionsqrt(firstNum)
+    ans = decisionsqrt(first_num)
   when '2'
-    ans = decisionsqr(firstNum)
+    ans = decisionsqr(first_num)
   else
     puts 'Invalid operation please try again'
   end
