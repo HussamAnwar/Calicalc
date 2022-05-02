@@ -1,4 +1,5 @@
-def memory(ans, m)
-  mems = m.push(ans)
-  return mems
+# frozen_string_literal: true
+
+def memory(ans, mem)
+  mem.push(ans)
 end
